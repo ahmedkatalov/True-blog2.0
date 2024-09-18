@@ -46,7 +46,7 @@ const index = ({ blog }: Props) => {
     const dispatch = useAppDispatch();
     const userId = Cookies.get('userId');
     const token = Cookies.get("token");
-
+   console.log("alhmed")
     const [isLiked, setIsLiked] = useState<boolean>(!!blog.likes.find((item) => item === userId)),
           [likesAmount, setLikesAmount] = useState<number>(blog.likes.length),
           [full, setFull] = useState<boolean>(false),
